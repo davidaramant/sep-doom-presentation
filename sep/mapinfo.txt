@@ -2,3 +2,18 @@ gameinfo
 {
 	AddEventHandlers = "MikoCompatHandler"
 }
+
+cluster 1 
+{
+	Hub
+}
+
+map MAP01 "SEP Forever Home"
+{
+	cluster = 1
+}
+
+map MAP02 "Movement"
+{
+	cluster = 1
+}
