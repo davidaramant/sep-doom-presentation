@@ -3,17 +3,61 @@ gameinfo
 	AddEventHandlers = "MikoCompatHandler"
 }
 
+clearepisodes
+
+episode SEP
+{
+	Name = "SEP Presentation"
+}
+
+defaultmap
+{
+	Sky1 = "F_SKY1"
+}
+
 cluster 1 
 {
 	Hub
 }
 
-map MAP01 "SEP Forever Home"
+map SEP "SEP Forever Home"
 {
-	cluster = 1
+	LevelNum = 1
+	Cluster = 1
 }
 
-map MAP02 "Movement"
+map BASICS "Elemental Sciences"
 {
-	cluster = 1
+	LevelNum = 2
+	Cluster = 1
+}
+
+map MOVEMENT "The Need for Speed"
+{
+	LevelNum = 3
+	Cluster = 1
+}
+
+map SOUND "The Sound & The Fury"
+{
+	LevelNum = 4
+	Cluster = 1
+}
+
+map ADS "Capitalist Carnage"
+{
+	LevelNum = 5
+	Cluster = 1
+}
+
+map SCRIPTING "Hocus Pocus"
+{
+	LevelNum = 6
+	Cluster = 1
+}
+
+map BSP "Beyond Time & Space"
+{
+	LevelNum = 7
+	Cluster = 1
 }
