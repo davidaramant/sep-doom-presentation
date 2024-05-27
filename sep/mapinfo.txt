@@ -50,10 +50,11 @@ map ADS "Capitalist Carnage"
 	Cluster = 1
 }
 
-map SCRIPTING "Hocus Pocus"
+map SCRIPTNG "Hocus Pocus"
 {
 	LevelNum = 6
 	Cluster = 1
+	EvenLighting
 }
 
 map BSP "Beyond Time & Space"
