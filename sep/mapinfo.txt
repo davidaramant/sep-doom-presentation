@@ -17,43 +17,49 @@ defaultmap
 
 cluster 1 
 {
-	Hub
+
 }
 
 map SEP "SEP Forever Home"
 {
 	LevelNum = 1
 	Cluster = 1
+	ResetHealth
 }
 
 map BASICS "Elemental Sciences"
 {
 	LevelNum = 2
 	Cluster = 1
+	ResetHealth
 }
 
 map MOVEMENT "The Need for Speed"
 {
 	LevelNum = 3
 	Cluster = 1
+	ResetHealth
 }
 
 map SOUND "The Sound & The Fury"
 {
 	LevelNum = 4
 	Cluster = 1
+	ResetHealth
 }
 
 map ADS "Capitalist Carnage"
 {
 	LevelNum = 5
 	Cluster = 1
+	ResetHealth
 }
 
 map SCRIPTNG "Hocus Pocus"
 {
 	LevelNum = 6
 	Cluster = 1
+	ResetHealth
 	EvenLighting
 }
 
@@ -61,4 +67,5 @@ map BSP "Beyond Time & Space"
 {
 	LevelNum = 7
 	Cluster = 1
+	ResetHealth
 }
