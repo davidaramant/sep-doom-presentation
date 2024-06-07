@@ -1,8 +1,3 @@
-gameinfo
-{
-	AddEventHandlers = "MikoCompatHandler"
-}
-
 clearepisodes
 
 episode SEP
@@ -61,6 +56,7 @@ map SCRIPTNG "Hocus Pocus"
 	Cluster = 1
 	ResetHealth
 	EvenLighting
+	EventHandlers = "MikoCompatHandler"
 }
 
 map BSP "Beyond Time & Space"

@@ -1,10 +1,24 @@
-class MikoCompatHandler : StaticEventHandler
+class MikoCompatHandler : EventHandler
 {
 	override void WorldThingSpawned (WorldEvent e)
 	{
 		let mo = e.thing;
-		//Console.Printf("Creating MikoCompatThinker for an instance of " .. mo.GetClassName());
-		MikoCompatThinker.Create(mo);
+		if (mo.GetClassName() == "DoomPlayer")
+		{
+			bool voodooDoll = (mo.player && mo.player.mo != mo);
+			if (voodooDoll)
+			{
+				MikoCompatThinker.Create(mo);
+				//Console.Printf("Created thinker for voodoo doll");
+			}
+		}
+	}
+
+	override void PlayerEntered (PlayerEvent e)
+	{
+		PlayerInfo player = players[e.PlayerNumber];
+		MikoCompatThinker.Create(player.mo);
+		//Console.Printf("Created thinker for real player");
 	}
 }
 
@@ -15,9 +29,9 @@ class MikoCompatThinker : Thinker
 
 	static void Create (Actor mo)
 	{
-		let thonker = new("MikoCompatThinker");
-		thonker.ChangeStatNum(STAT_FIRST_THINKING); //Tick before any actor ticks!
-		thonker.owner = mo;
+		let thinker = new("MikoCompatThinker");
+		thinker.ChangeStatNum(STAT_FIRST_THINKING); //Tick before any actor ticks!
+		thinker.owner = mo;
 	}
 
 	override void Tick ()
@@ -52,7 +66,7 @@ class MikoCompatThinker : Thinker
 				//It makes a difference on brexit.wad speedwise.
 				owner.SetZ(owner.ceilingZ);
 			}
-			else if (!voodooDoll && owner.pos.z + owner.vel.z <= FLOOR_THRESHOLD && owner.pos.xy != owner.spawnPoint.xy)
+			else if (!voodooDoll && (owner.pos.z + owner.vel.z) <= FLOOR_THRESHOLD && owner.pos.xy != owner.spawnPoint.xy)
 			{
 				//For miko_01.wad's health bonus next to the voodoo doll - check if the actor has
 				//moved away from its "spawnPoint" before setting Z.
