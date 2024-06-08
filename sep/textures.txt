@@ -1,0 +1,53 @@
+// ***********
+// WOLF 3D
+// ***********
+
+// Classic Walls
+Texture WLF0001A, 64, 64 { Patch WALL0000, 0, 0 }
+Texture WLF0001B, 64, 64 { Patch WALL0001, 0, 0 }
+Texture WLF0002A, 64, 64 { Patch WALL0002, 0, 0 }
+Texture WLF0002B, 64, 64 { Patch WALL0003, 0, 0 }
+Texture WLF0003A, 64, 64 { Patch WALL0004, 0, 0 }
+Texture WLF0003B, 64, 64 { Patch WALL0005, 0, 0 }
+Texture WLF0004A, 64, 64 { Patch WALL0006, 0, 0 }
+Texture WLF0004B, 64, 64 { Patch WALL0007, 0, 0 }
+Texture WLF0005A, 64, 64 { Patch WALL0008, 0, 0 }
+Texture WLF0005B, 64, 64 { Patch WALL0009, 0, 0 }
+Texture WLF0006A, 64, 64 { Patch WALL0010, 0, 0 }
+Texture WLF0006B, 64, 64 { Patch WALL0011, 0, 0 }
+Texture WLF0007A, 64, 64 { Patch WALL0012, 0, 0 }
+Texture WLF0007B, 64, 64 { Patch WALL0013, 0, 0 }
+Texture WLF0008A, 64, 64 { Patch WALL0014, 0, 0 }
+Texture WLF0008B, 64, 64 { Patch WALL0015, 0, 0 }
+Texture WLF0009A, 64, 64 { Patch WALL0016, 0, 0 }
+Texture WLF0009B, 64, 64 { Patch WALL0017, 0, 0 }
+Texture WLF000AA, 64, 64 { Patch WALL0018, 0, 0 }
+Texture WLF000AB, 64, 64 { Patch WALL0019, 0, 0 }
+Texture WLF000BA, 64, 64 { Patch WALL0020, 0, 0 }
+Texture WLF000BB, 64, 64 { Patch WALL0021, 0, 0 }
+Texture WLF000CA, 64, 64 { Patch WALL0022, 0, 0 }
+Texture WLF000CB, 64, 64 { Patch WALL0023, 0, 0 }
+
+Texture WLF0DORA, 64, 64 { Patch WALL0098, 0, 0 { FlipX } }
+Texture WLF0DORB, 64, 64 { Patch WALL0099, 0, 0 }
+Texture WLF0DORC, 64, 64 { Patch WALL0098, 0, 0 }
+Texture WLF0DORD, 64, 64 { Patch WALL0099, 0, 0 { FlipX } }
+
+Texture WLF1DORA, 64, 64 {Graphic WALL0098, 0, 0 { FlipX } }
+Texture WLF1DORB, 64, 64 {Graphic WALL0099, 0, 0 }
+
+Texture WLF0JMBA, 64, 64 { Patch WALL0100, 0, 0 }
+Texture WLF0JMBB, 64, 64 { Patch WALL0101, 0, 0 }
+Texture WLF0JMBC, 64, 64 { Patch WALL0100, 0, 0 { FlipX } }
+Texture WLF0JMBD, 64, 64 { Patch WALL0101, 0, 0 { FlipX } }
+
+// Decorations
+Sprite LIT3A0, 64, 64 { Offset 32, 64 Patch WSPR0006, 0, 0 }
+Sprite PLT2A0, 64, 64 { Offset 32, 64 Patch WSPR0013, 0, 0 }
+Sprite LIT5A0, 64, 64 { Offset 32, 64 Patch WSPR0016, 0, 0 }
+
+
+
+
+
+

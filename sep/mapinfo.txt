@@ -65,3 +65,10 @@ map BSP "Beyond Time & Space"
 	Cluster = 1
 	ResetHealth
 }
+
+DoomEdNums
+{
+	21027=HangingChandelier
+	21034=PlantinVase
+	21037=GreenCeilingLight
+}
