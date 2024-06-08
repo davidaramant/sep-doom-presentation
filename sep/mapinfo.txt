@@ -29,7 +29,7 @@ map BASICS "Elemental Sciences"
 	ResetHealth
 }
 
-map MOVEMENT "The Need for Speed"
+map MOVEMENT "The Need For Speed"
 {
 	LevelNum = 3
 	Cluster = 1
@@ -43,7 +43,7 @@ map SOUND "The Sound & The Fury"
 	ResetHealth
 }
 
-map ADS "Capitalist Carnage"
+map ADS "Commercial Carnage"
 {
 	LevelNum = 5
 	Cluster = 1
@@ -59,7 +59,7 @@ map SCRIPTNG "Hocus Pocus"
 	EventHandlers = "MikoCompatHandler"
 }
 
-map BSP "Beyond Time & Space"
+map BSP "Render Bender"
 {
 	LevelNum = 7
 	Cluster = 1
@@ -68,6 +68,7 @@ map BSP "Beyond Time & Space"
 
 DoomEdNums
 {
+	// Wolf 3D stuff
 	21027=HangingChandelier
 	21034=PlantinVase
 	21037=GreenCeilingLight
