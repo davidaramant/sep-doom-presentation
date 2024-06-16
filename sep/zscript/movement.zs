@@ -20,7 +20,8 @@ class ProgressMarker : Actor
 	Default
 	{
 		Radius 8;
-		Height 8;
+		Height 16;
+		+NOGRAVITY;
 	}
 	States
 	{
