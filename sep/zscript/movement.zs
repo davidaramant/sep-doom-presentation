@@ -6,6 +6,7 @@ class PlayerMarker : Actor
 		Height 56;
 		RenderStyle "Translucent";
 		Alpha 0.75;
+		+NOGRAVITY;
 	}
 	States
 	{
