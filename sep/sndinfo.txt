@@ -11,3 +11,5 @@ music_ripoffs/pantera/thislove/doom = "sounds/music_ripoffs/pantera.thislove.doo
 music_ripoffs/pantera/thislove/real = "sounds/music_ripoffs/pantera.thislove.real.ogg"
 music_ripoffs/slayer/southofheaven/doom = "sounds/music_ripoffs/slayer.southofheaven.doom.ogg"
 music_ripoffs/slayer/southofheaven/real = "sounds/music_ripoffs/slayer.southofheaven.real.ogg"
+
+brain/reversed = "sounds/ios_reversed.ogg"
