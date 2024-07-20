@@ -1,3 +1,13 @@
-// Wolf 3D
 wolf3d/door/open = "sounds/wolf3d/dooropen.wav"
 wolf3d/door/close = "sounds/wolf3d/doorclose.wav"
+
+music_ripoffs/aliceinchains/angrychair/doom = "sounds/music_ripoffs/aliceinchains.angrychair.doom.ogg"
+music_ripoffs/aliceinchains/angrychair/real = "sounds/music_ripoffs/aliceinchains.angrychair.real.ogg"
+music_ripoffs/metallica/noremorse/doom = "sounds/music_ripoffs/metallica.noremorse.doom.ogg"
+music_ripoffs/metallica/noremorse/real = "sounds/music_ripoffs/metallica.noremorse.real.ogg"
+music_ripoffs/pantera/mouthforwar/doom = "sounds/music_ripoffs/pantera.mouthforwar.doom.ogg"
+music_ripoffs/pantera/mouthforwar/real = "sounds/music_ripoffs/pantera.mouthforwar.real.ogg"
+music_ripoffs/pantera/thislove/doom = "sounds/music_ripoffs/pantera.thislove.doom.ogg"
+music_ripoffs/pantera/thislove/real = "sounds/music_ripoffs/pantera.thislove.real.ogg"
+music_ripoffs/slayer/southofheaven/doom = "sounds/music_ripoffs/slayer.southofheaven.doom.ogg"
+music_ripoffs/slayer/southofheaven/real = "sounds/music_ripoffs/slayer.southofheaven.real.ogg"
