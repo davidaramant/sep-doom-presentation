@@ -9,7 +9,7 @@ Taken from Fishytza's `fcw_mikocompat-take2.pk3` found on the [ZDoom Forums](htt
 INI file location:
 
 * Windows: `Documents\My Games\GZDoom\gzdoom.ini`
-* macOS: TBD  
+* macOS: `~/Library/Preferences/gzdoom.ini`  
 
 ```
 [Doom.ConsoleAliases]
