@@ -3,7 +3,6 @@ wolf3d/door/close = "sounds/wolf3d/doorclose.wav"
 
 music_ripoffs/aliceinchains/angrychair/doom = "sounds/music_ripoffs/aliceinchains.angrychair.doom.ogg"
 music_ripoffs/aliceinchains/angrychair/real = "sounds/music_ripoffs/aliceinchains.angrychair.real.ogg"
-music_ripoffs/metallica/noremorse/doom = "sounds/music_ripoffs/metallica.noremorse.doom.ogg"
 music_ripoffs/metallica/noremorse/real = "sounds/music_ripoffs/metallica.noremorse.real.ogg"
 music_ripoffs/pantera/mouthforwar/doom = "sounds/music_ripoffs/pantera.mouthforwar.doom.ogg"
 music_ripoffs/pantera/mouthforwar/real = "sounds/music_ripoffs/pantera.mouthforwar.real.ogg"
@@ -11,5 +10,8 @@ music_ripoffs/pantera/thislove/doom = "sounds/music_ripoffs/pantera.thislove.doo
 music_ripoffs/pantera/thislove/real = "sounds/music_ripoffs/pantera.thislove.real.ogg"
 music_ripoffs/slayer/southofheaven/doom = "sounds/music_ripoffs/slayer.southofheaven.doom.ogg"
 music_ripoffs/slayer/southofheaven/real = "sounds/music_ripoffs/slayer.southofheaven.real.ogg"
+
+midi_devices/opl3 = "sounds/midi_devices/opl3.ogg"
+midi_devices/sc55 = "sounds/midi_devices/sc55.ogg"
 
 brain/reversed = "sounds/ios_reversed.ogg"
