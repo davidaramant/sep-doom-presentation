@@ -50,6 +50,20 @@ map ADS "Commercial Carnage"
 	ResetHealth
 }
 
+map KICK "Kick Doom"
+{
+	LevelNum = 8
+	Cluster = 1
+	ResetHealth
+}
+
+map CHEX "Chex Quest"
+{
+	LevelNum = 9
+	Cluster = 1
+	ResetHealth
+}
+
 map SCRIPTNG "Hocus Pocus"
 {
 	LevelNum = 6
