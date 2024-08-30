@@ -50,7 +50,7 @@ map ADS "Commercial Carnage"
 	ResetHealth
 }
 
-map KICK "Kick Doom"
+map KICK "Kick Attack!"
 {
 	LevelNum = 8
 	Cluster = 1
