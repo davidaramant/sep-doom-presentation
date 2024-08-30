@@ -1,0 +1,356 @@
+WallTexture "KA_BRONZE1", 64, 128
+{
+	Patch "patches/kick/KA_RW10_1.png", 0, 0
+}
+
+WallTexture "KA_BROWN1", 128, 128
+{
+	Patch "patches/kick/KA_WALL02_2.png", 0, 56
+	Patch "patches/kick/KA_WALL02_2.png", 0, 0
+	Patch "patches/kick/KA_WALL02_3.png", 64, 56
+	Patch "patches/kick/KA_WALL02_1.png", 88, 56
+	Patch "patches/kick/KA_WALL02_3.png", 64, 0
+	Patch "patches/kick/KA_WALL02_1.png", 88, 0
+}
+
+WallTexture "KA_CRATE1", 64, 128
+{
+	Patch "patches/kick/KA_BCRATEL1.png", 0, 0
+	Patch "BCRATER1", 32, 0
+	Patch "patches/kick/KA_BCRATEL1.png", 0, 64
+	Patch "BCRATER1", 32, 64
+}
+
+WallTexture "KA_CRATE2", 64, 128
+{
+	Patch "patches/kick/KA_GCRATEL1.png", 0, 0
+	Patch "GCRATER1", 32, 0
+	Patch "patches/kick/KA_GCRATEL1.png", 0, 64
+	Patch "GCRATER1", 32, 64
+}
+
+WallTexture "KA_CRATE3", 64, 128
+{
+	Patch "patches/kick/KA_GCRATEL1.png", 0, 0
+	Patch "GCRATER1", 32, 0
+	Patch "patches/kick/KA_BCRATEL1.png", 0, 64
+	Patch "BCRATER1", 32, 64
+}
+
+WallTexture "KA_CRATELIT", 64, 128
+{
+	Patch "SGCRATE2", 0, 0
+	Patch "SGCRATE2", 32, 0
+	Patch "patches/kick/KA_BCRATEL1.png", 0, 64
+	Patch "BCRATER1", 32, 64
+}
+
+WallTexture "KA_CRATWIDE", 128, 128
+{
+	Patch "patches/kick/KA_BCRATEL1.png", 0, 64
+	Patch "BCRATEM1", 40, 64
+	Patch "BCRATEM1", 32, 64
+	Patch "BCRATEM1", 48, 64
+	Patch "BCRATEM1", 56, 64
+	Patch "BCRATER1", 96, 64
+	Patch "BCRATEM1", 88, 64
+	Patch "BCRATEM1", 80, 64
+	Patch "BCRATEM1", 72, 64
+	Patch "BCRATEM1", 64, 64
+	Patch "patches/kick/KA_GCRATEL1.png", 0, 0
+	Patch "GCRATER1", 96, 0
+	Patch "GCRATEM1", 48, 0
+	Patch "GCRATEM1", 40, 0
+	Patch "GCRATEM1", 32, 0
+	Patch "GCRATEM1", 72, 0
+	Patch "GCRATEM1", 64, 0
+	Patch "GCRATEM1", 56, 0
+	Patch "GCRATEM1", 80, 0
+	Patch "GCRATEM1", 88, 0
+}
+
+WallTexture "KA_DOOR3", 64, 72
+{
+	Patch "patches/kick/KA_DOOR2_5.png", 0, 0
+}
+
+WallTexture "KA_METAL", 64, 128
+{
+	Patch "patches/kick/KA_WALL47_1.png", 0, 0
+}
+
+WallTexture "KA_METAL2", 64, 128
+{
+	Patch "patches/kick/KA_RW33_1.png", 0, 0
+}
+
+WallTexture "KA_STARGR2", 128, 128
+{
+	Patch "patches/kick/KA_SW15_1.png", 0, 0
+	Patch "patches/kick/KA_SW15_3.png", 64, 0
+	Patch "patches/kick/KA_SW16_1.png", 96, 0
+	Patch "patches/kick/KA_SW16_2.png", 32, 0
+}
+
+WallTexture "KA_STARTAN2", 128, 128
+{
+	Patch "patches/kick/KA_SW17_4.png", 0, 0
+	Patch "patches/kick/KA_SW17_5.png", 32, 0
+	Patch "patches/kick/KA_SW17_6.png", 64, 0
+	Patch "patches/kick/KA_SW18_7.png", 96, 0
+}
+
+WallTexture "KA_SW1BRCOM", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S0.png", 48, 72
+}
+
+WallTexture "KA_SW1BRIK", 64, 128
+{
+	Patch "RW23_4", 0, 0
+	Patch "patches/kick/KA_SW1S0.png", 16, 72
+}
+
+WallTexture "KA_SW1BRN1", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S0.png", 48, 72
+}
+
+WallTexture "KA_SW1BRN2", 64, 128
+{
+	Patch "patches/kick/KA_WALL02_2.png", 0, 56
+	Patch "patches/kick/KA_WALL02_2.png", 0, 0
+	Patch "patches/kick/KA_SW4S0.png", 20, 79
+}
+
+WallTexture "KA_SW1BRNGN", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "patches/kick/KA_SW4S0.png", 20, 80
+}
+
+WallTexture "KA_SW1COMM", 64, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "patches/kick/KA_SW1S0.png", 15, 18
+}
+
+WallTexture "KA_SW1DIRT", 64, 128
+{
+	Patch "WALL00_7", 32, 0
+	Patch "WALL00_6", 16, 0
+	Patch "patches/kick/KA_SW1S0.png", 16, 20
+	Patch "WALL00_6", 0, -16
+	Patch "WALL00_7", 48, 0
+}
+
+WallTexture "KA_SW1GRAY1", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "patches/kick/KA_SW4S0.png", 19, 79
+}
+
+WallTexture "KA_SW1MET2", 64, 128
+{
+	Patch "patches/kick/KA_RW33_1.png", 0, 0
+	Patch "patches/kick/KA_SW1S0.png", 16, 20
+}
+
+WallTexture "KA_SW1METAL", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "patches/kick/KA_SW4S0.png", 20, 68
+}
+
+WallTexture "KA_SW1MOD1", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "patches/kick/KA_SW4S0.png", 20, 80
+}
+
+WallTexture "KA_SW1STARG", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S0.png", 48, 72
+}
+
+WallTexture "KA_SW1STON1", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "W28_8", 0, 0
+	Patch "patches/kick/KA_SW1S0.png", 16, 78
+}
+
+WallTexture "KA_SW1STON2", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S0.png", 48, 72
+}
+
+WallTexture "KA_SW1STONE", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S0.png", 48, 72
+}
+
+WallTexture "KA_SW1STRTN", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "patches/kick/KA_SW1S0.png", 16, 72
+}
+
+WallTexture "KA_SW1TEK", 64, 128
+{
+	Patch "patches/kick/KA_RW37_2.png", 0, 0
+	Patch "patches/kick/KA_SW4S0.png", 20, 79
+}
+
+WallTexture "KA_SW1VINE", 64, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "patches/kick/KA_SW4S0.png", 20, 84
+}
+
+WallTexture "KA_SW2BRCOM", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 48, 72
+}
+
+WallTexture "KA_SW2BRIK", 64, 128
+{
+	Patch "RW23_4", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 16, 72
+}
+
+WallTexture "KA_SW2BRN1", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 48, 72
+}
+
+WallTexture "KA_SW2BRN2", 64, 128
+{
+	Patch "patches/kick/KA_WALL02_2.png", 0, 56
+	Patch "patches/kick/KA_WALL02_2.png", 0, 0
+	Patch "patches/kick/KA_SW4S1.png", 20, 79
+}
+
+WallTexture "KA_SW2BRNGN", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "patches/kick/KA_SW4S1.png", 20, 80
+}
+
+WallTexture "KA_SW2COMM", 64, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 15, 18
+}
+
+WallTexture "KA_SW2DIRT", 64, 128
+{
+	Patch "WALL00_8", 48, 0
+	Patch "WALL00_7", 32, 0
+	Patch "WALL00_6", 16, 0
+	Patch "WALL00_5", 0, -1
+	Patch "patches/kick/KA_SW1S1.png", 16, 20
+}
+
+WallTexture "KA_SW2GRAY1", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "patches/kick/KA_SW4S1.png", 19, 79
+}
+
+WallTexture "KA_SW2MET2", 64, 128
+{
+	Patch "patches/kick/KA_RW33_1.png", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 16, 20
+}
+
+WallTexture "KA_SW2METAL", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "patches/kick/KA_SW4S1.png", 20, 68
+}
+
+WallTexture "KA_SW2MOD1", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "patches/kick/KA_SW4S1.png", 20, 80
+}
+
+WallTexture "KA_SW2STARG", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 48, 72
+}
+
+WallTexture "KA_SW2STON1", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "W28_8", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 16, 78
+}
+
+WallTexture "KA_SW2STON2", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 48, 72
+}
+
+WallTexture "KA_SW2STONE", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 48, 72
+}
+
+WallTexture "KA_SW2STRTN", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "patches/kick/KA_SW1S1.png", 16, 72
+}
+
+WallTexture "KA_SW2TEK", 64, 128
+{
+	Patch "patches/kick/KA_RW37_2.png", 0, 0
+	Patch "patches/kick/KA_SW4S1.png", 20, 79
+}
+
+WallTexture "KA_SW2VINE", 64, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "patches/kick/KA_SW4S1.png", 20, 84
+}
+
+WallTexture "KA_TEKGREN1", 64, 128
+{
+	Patch "patches/kick/KA_RW37_1.png", 0, 0
+}
+
+WallTexture "KA_TEKGREN2", 64, 128
+{
+	Patch "patches/kick/KA_RW37_2.png", 0, 0
+}
+
+WallTexture "KA_TEKGREN3", 64, 128
+{
+	Patch "patches/kick/KA_RW37_3.png", 0, 0
+}
+
+WallTexture "KA_TEKLITE", 64, 128
+{
+	Patch "patches/kick/KA_RW43_3.png", 0, 0
+}
+
