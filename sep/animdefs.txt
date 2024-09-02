@@ -1,0 +1,3 @@
+// Kick Attack switches
+switch doom 3 KA_SW1TEK on pic KA_SW2TEK tics 0
+switch doom 3 KA_SW1MET2 on pic KA_SW2MET2 tics 0
