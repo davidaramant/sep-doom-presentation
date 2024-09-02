@@ -68,6 +68,18 @@ WallTexture "KA_SW2COMM", 64, 72
 	Patch "patches/kick/KA_SW1S1.png", 15, 18
 }
 
+WallTexture "KA_SW2MET2", 64, 128
+{
+	Patch "patches/kick/KA_RW33_1.png", 0, 0
+	Patch "patches/kick/KA_SW1S1.png", 16, 20
+}
+
+WallTexture "KA_SW2TEK", 64, 128
+{
+	Patch "patches/kick/KA_RW37_2.png", 0, 0
+	Patch "patches/kick/KA_SW4S1.png", 20, 79
+}
+
 WallTexture "KA_TEKGREN1", 64, 128
 {
 	Patch "patches/kick/KA_RW37_1.png", 0, 0
