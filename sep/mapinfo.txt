@@ -88,4 +88,32 @@ DoomEdNums
 	21037=GreenCeilingLight
 
 	// Kick Attack!
+	5000=KickColumn
+	5001=KickTechPillar
+	5002=KickRedCard
+	5003=KickYellowCard
+	5004=KickBlueCard
+	5005=KickTechLamp
+	5006=KickMedikit
+	5007=KickStimpack
+	5008=KickHealthBonus
+	5009=KickArmorBonus
+	5010=KickClip
+	5011=KickShell
+	5012=KickShellBox
+	5013=KickRocketBox
+	5014=KickSoulsphere
+	5015=KickClipBox
+	5016=KickRocketAmmo
+	5017=KickCell
+	5018=KickRocketLauncher
+	5019=KickPlasmaRifle
+	5020=KickCellPack
+	5021=KickShotgun
+	5022=KickShotgunGuy
+	5023=KickChaingun
+	5024=KickDoomImp
+	5025=KickLostSoul
+	5026=KickDemon
+	5027=KickSpiderMastermind
 }
