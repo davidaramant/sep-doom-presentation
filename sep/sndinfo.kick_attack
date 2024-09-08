@@ -1,0 +1,40 @@
+kick_attack/weapons/rocklf = "sounds/kick_attack/karlaunc.lmp"
+// This was misnamed as the BFG explosion
+kick_attack/weapons/rocklx = "sounds/kick_attack/karxplod.lmp"
+kick_attack/weapons/plasmax = "sounds/kick_attack/kafirxpl.lmp"
+
+$random kick_attack/shotguy/sight		{ kick_attack/shotguy/sight1  kick_attack/shotguy/sight2  kick_attack/shotguy/sight3 }
+$random kick_attack/shotguy/death		{ kick_attack/shotguy/death1  kick_attack/shotguy/death2  kick_attack/shotguy/death3 }
+kick_attack/shotguy/sight1 = "sounds/kick_attack/kaposit1.lmp"
+kick_attack/shotguy/sight2 = "sounds/kick_attack/kaposit2.lmp"
+kick_attack/shotguy/sight3 = "sounds/kick_attack/kaposit3.lmp"
+kick_attack/shotguy/active = "sounds/kick_attack/kaposact.lmp"
+kick_attack/shotguy/pain = "sounds/kick_attack/kapopain.lmp"
+kick_attack/shotguy/death1 = "sounds/kick_attack/kapodth1.lmp"
+kick_attack/shotguy/death2 = "sounds/kick_attack/kapodth2.lmp"
+kick_attack/shotguy/death3 = "sounds/kick_attack/kapodth3.lmp"
+
+$random kick_attack/imp/sight		{ kick_attack/imp/sight1  kick_attack/imp/sight2 }
+$random kick_attack/imp/death		{ kick_attack/imp/death1  kick_attack/imp/death2 }
+kick_attack/imp/sight1 = "sounds/kick_attack/kabgsit1.lmp"
+kick_attack/imp/sight2 = "sounds/kick_attack/kabgsit2.lmp"
+kick_attack/imp/active = "sounds/kick_attack/kabgact.lmp"
+kick_attack/imp/pain = "sounds/kick_attack/kapopain.lmp"
+kick_attack/imp/melee = "sounds/kick_attack/kaclaw.lmp"
+kick_attack/imp/death1 = "sounds/kick_attack/kabgdth1.lmp"
+kick_attack/imp/death2 = "sounds/kick_attack/kabgdth2.lmp"
+kick_attack/imp/attack = "sounds/kick_attack/kafirsht.lmp"
+kick_attack/imp/shotx = "sounds/kick_attack/kafirxpl.lmp"
+
+kick_attack/demon/sight = "sounds/kick_attack/kasgtsit.lmp"
+kick_attack/demon/active = "sounds/kick_attack/kadmact.lmp"
+kick_attack/demon/pain = "sounds/kick_attack/kadmpain.lmp"
+kick_attack/demon/melee = "sounds/kick_attack/kasgtatk.lmp"
+kick_attack/demon/death = "sounds/kick_attack/kasgtdth.lmp"
+
+kick_attack/skull/active = "sounds/kick_attack/kadmact.lmp"
+kick_attack/skull/pain = "sounds/kick_attack/kadmpain.lmp"
+kick_attack/skull/death = "sounds/kick_attack/kafirxpl.lmp"
+
+kick_attack/spider/active = "sounds/kick_attack/kadmact.lmp"
+kick_attack/spider/pain = "sounds/kick_attack/kadmpain.lmp"
