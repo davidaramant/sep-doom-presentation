@@ -1,6 +1,3 @@
-wolf3d/door/open = "sounds/wolf3d/dooropen.wav"
-wolf3d/door/close = "sounds/wolf3d/doorclose.wav"
-
 music_ripoffs/aliceinchains/angrychair/doom = "sounds/music_ripoffs/aliceinchains.angrychair.doom.ogg"
 music_ripoffs/aliceinchains/angrychair/real = "sounds/music_ripoffs/aliceinchains.angrychair.real.ogg"
 music_ripoffs/metallica/noremorse/real = "sounds/music_ripoffs/metallica.noremorse.real.ogg"

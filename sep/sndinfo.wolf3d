@@ -1,0 +1,2 @@
+wolf3d/door/open = "sounds/wolf3d/dooropen.wav"
+wolf3d/door/close = "sounds/wolf3d/doorclose.wav"
