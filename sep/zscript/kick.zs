@@ -207,6 +207,10 @@ class KickSoulsphere : Soulsphere
 
 class KickRocketLauncher : RocketLauncher
 {
+    Default
+    {
+        Weapon.SlotNumber 5;
+    }
 	States
 	{
 	Ready:
@@ -220,7 +224,7 @@ class KickRocketLauncher : RocketLauncher
 		Loop;
 	Fire:
 		K019 B 8 A_GunFlash;
-		K019 B 12 A_FireMissile;
+		K019 B 12 A_FireKickMissile;
 		K019 B 0 A_ReFire;
 		Goto Ready;
 	Flash:
@@ -231,6 +235,22 @@ class KickRocketLauncher : RocketLauncher
 	Spawn:
 		K021 A -1;
 		Stop;
+	}
+
+    action void A_FireKickMissile()
+	{
+		if (player == null)
+		{
+			return;
+		}
+		Weapon weap = player.ReadyWeapon;
+		if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
+		{
+			if (!weap.DepleteAmmo (weap.bAltFire, true, 1))
+				return;
+		}
+		
+		SpawnPlayerMissile ("KickRocket");
 	}
 }
 
@@ -259,6 +279,10 @@ class KickRocket : Rocket
 
 class KickPlasmaRifle : PlasmaRifle
 {
+    Default
+    {
+        Weapon.SlotNumber 6;
+    }
 	States
 	{
 	Ready:
@@ -271,7 +295,7 @@ class KickPlasmaRifle : PlasmaRifle
 		K022 A 1 A_Raise;
 		Loop;
 	Fire:
-		K022 A 3 A_FirePlasma;
+		K022 A 3 A_FireKickPlasma;
 		K022 B 20 A_ReFire;
 		Goto Ready;
 	Flash:
@@ -282,6 +306,29 @@ class KickPlasmaRifle : PlasmaRifle
 	Spawn:
 		K024 A -1;
 		Stop;
+	}
+
+    action void A_FireKickPlasma()
+	{
+		if (player == null)
+		{
+			return;
+		}
+		Weapon weap = player.ReadyWeapon;
+		if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
+		{
+			if (!weap.DepleteAmmo (weap.bAltFire, true, 1))
+				return;
+			
+			State flash = weap.FindState('Flash');
+			if (flash != null)
+			{
+				player.SetSafeFlash(weap, flash, random[FirePlasma](0, 1));
+			}
+			
+		}
+		
+		SpawnPlayerMissile ("KickPlasmaBall");
 	}
 }
 
@@ -304,6 +351,10 @@ class KickPlasmaBall : PlasmaBall
 
 class KickShotgun : Shotgun
 {
+    Default
+    {
+        Weapon.SlotNumber 3;
+    }
 	States
 	{
 	Ready:
@@ -336,6 +387,10 @@ class KickShotgun : Shotgun
 
 class KickChaingun : Chaingun
 {
+    Default
+    {
+        Weapon.SlotNumber 4;
+    }
 	States
 	{
 	Ready:
@@ -364,6 +419,10 @@ class KickChaingun : Chaingun
 
 class KickFist : Fist
 {
+    Default
+    {
+        Weapon.SlotNumber 1;
+    }
 	States
 	{
 	Ready:
@@ -375,18 +434,22 @@ class KickFist : Fist
 	Select:
 		K041 A 1 A_Raise;
 		Loop;
-	Fire:
-		K041 B 4;
-		K041 C 4 A_Punch;
-		K041 D 5;
-		K041 C 4;
-		K041 B 5 A_ReFire;
+    Fire:
+		PUNG B 4;
+		PUNG C 4 A_Punch;
+		PUNG D 5;
+		PUNG C 4;
+		PUNG B 5 A_ReFire;
 		Goto Ready;
 	}
 }
 
 class KickPistol : Pistol
 {
+    Default
+    {
+        Weapon.SlotNumber 2;
+    }
 	States
 	{
 	Ready:
