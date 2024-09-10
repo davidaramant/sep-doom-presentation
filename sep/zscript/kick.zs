@@ -368,7 +368,7 @@ class KickShotgun : Shotgun
 		Loop;
 	Fire:
 		K025 A 3;
-		K025 A 7 A_FireShotgun;
+		K025 A 7 A_FireKickShotgun;
 		K025 BC 5;
 		K025 D 4;
 		K025 CB 5;
@@ -382,6 +382,32 @@ class KickShotgun : Shotgun
 	Spawn:
 		K027 A -1;
 		Stop;
+	}
+
+    action void A_FireKickShotgun()
+	{
+		if (player == null)
+		{
+			return;
+		}
+
+		A_StartSound ("weapons/shotgf", CHAN_WEAPON);
+		Weapon weap = player.ReadyWeapon;
+		if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
+		{
+			if (!weap.DepleteAmmo (weap.bAltFire, true, 1))
+				return;
+			
+			player.SetPsprite(PSP_FLASH, weap.FindState('Flash'), true);
+		}
+		player.mo.PlayAttacking2 ();
+
+		double pitch = BulletSlope ();
+
+		for (int i = 0; i < 7; i++)
+		{
+			GunShot (false, "KickBulletPuff", pitch);
+		}
 	}
 }
 
@@ -403,7 +429,7 @@ class KickChaingun : Chaingun
 		K028 A 1 A_Raise;
 		Loop;
 	Fire:
-		K028 AB 4 A_FireCGun;
+		K028 AB 4 A_FireKickCGun;
 		K028 B 0 A_ReFire;
 		Goto Ready;
 	Flash:
@@ -414,6 +440,40 @@ class KickChaingun : Chaingun
 	Spawn:
 		K030 A -1;
 		Stop;
+	}
+
+    action void A_FireKickCGun()
+	{
+		if (player == null)
+		{
+			return;
+		}
+
+		Weapon weap = player.ReadyWeapon;
+		if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
+		{
+			if (!weap.DepleteAmmo (weap.bAltFire, true, 1))
+				return;
+
+			A_StartSound ("weapons/chngun", CHAN_WEAPON);
+
+			State flash = weap.FindState('Flash');
+			if (flash != null)
+			{
+				// Removed most of the mess that was here in the C++ code because SetSafeFlash already does some thorough validation.
+				State atk = weap.FindState('Fire');
+				let psp = player.GetPSprite(PSP_WEAPON);
+				if (psp) 
+				{
+					State cur = psp.CurState;
+					int theflash = atk == cur? 0:1;
+					player.SetSafeFlash(weap, flash, theflash);
+				}
+			}
+		}
+		player.mo.PlayAttacking2 ();
+
+		GunShot (!player.refire, "KickBulletPuff", BulletSlope ());
 	}
 }
 
@@ -436,11 +496,44 @@ class KickFist : Fist
 		Loop;
     Fire:
 		PUNG B 4;
-		PUNG C 4 A_Punch;
+		PUNG C 4 A_KickPunch;
 		PUNG D 5;
 		PUNG C 4;
 		PUNG B 5 A_ReFire;
 		Goto Ready;
+	}
+
+    action void A_KickPunch()
+	{
+		FTranslatedLineTarget t;
+
+		if (player != null)
+		{
+			Weapon weap = player.ReadyWeapon;
+			if (weap != null && !weap.bDehAmmo && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
+			{
+				if (!weap.DepleteAmmo (weap.bAltFire))
+					return;
+			}
+		}
+
+		int damage = random[Punch](1, 10) << 1;
+
+		if (FindInventory("PowerStrength"))
+			damage *= 10;
+
+		double ang = angle + Random2[Punch]() * (5.625 / 256);
+		double range = MeleeRange + MELEEDELTA;
+		double pitch = AimLineAttack (ang, range, null, 0., ALF_CHECK3D);
+
+		LineAttack (ang, range, pitch, damage, 'Melee', "KickBulletPuff", LAF_ISMELEEATTACK, t);
+
+		// turn to face target
+		if (t.linetarget)
+		{
+			A_StartSound ("*fist", CHAN_WEAPON);
+			angle = t.angleFromSource;
+		}
 	}
 }
 
@@ -463,7 +556,7 @@ class KickPistol : Pistol
 		Loop;
 	Fire:
 		K042 A 4;
-		K042 B 6 A_FirePistol;
+		K042 B 6 A_FireKickPistol;
 		K042 C 4;
 		K042 B 5 A_ReFire;
 		Goto Ready;
@@ -475,6 +568,33 @@ class KickPistol : Pistol
  	Spawn:
 		K044 A -1;
 		Stop;
+	}
+
+    action void A_FireKickPistol()
+	{
+		bool accurate;
+
+		if (player != null)
+		{
+			Weapon weap = player.ReadyWeapon;
+			if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
+			{
+				if (!weap.DepleteAmmo (weap.bAltFire, true, 1))
+					return;
+
+				player.SetPsprite(PSP_FLASH, weap.FindState('Flash'), true);
+			}
+			player.mo.PlayAttacking2 ();
+
+			accurate = !player.refire;
+		}
+		else
+		{
+			accurate = true;
+		}
+
+		A_StartSound ("weapons/pistol", CHAN_WEAPON);
+		GunShot (accurate, "KickBulletPuff", BulletSlope ());
 	}
 }
 
