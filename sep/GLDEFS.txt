@@ -1,0 +1,10 @@
+skybox REDSKY
+{
+    03_FR
+    03_LF
+    03_BK
+    03_RT
+    03_UP
+    03_UP
+}
+

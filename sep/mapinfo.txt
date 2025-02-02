@@ -27,6 +27,7 @@ map BASICS "Elemental Sciences"
 	LevelNum = 2
 	Cluster = 1
 	ResetHealth
+	Sky1 = "REDSKY", 0
 }
 
 map MOVEMENT "The Need For Speed"
