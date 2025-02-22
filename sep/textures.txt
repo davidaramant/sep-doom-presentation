@@ -1,2 +1,3 @@
 #include "TEXTURES.wolf3d"
 #include "TEXTURES.kick"
+#include "TEXTURES.hovertank3d"

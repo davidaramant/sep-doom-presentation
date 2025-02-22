@@ -88,6 +88,10 @@ DoomEdNums
 	21034=PlantinVase
 	21037=GreenCeilingLight
 
+	// Hovertank
+	20000=HovertankKid
+	20001=HovertankSquid
+
 	// Kick Attack!
 	5000=KickColumn
 	5001=KickTechPillar
