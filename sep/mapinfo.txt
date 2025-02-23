@@ -26,8 +26,8 @@ map BASICS "Elemental Sciences"
 {
 	LevelNum = 2
 	Cluster = 1
-	ResetHealth
 	Sky1 = "REDSKY", 0
+	ResetHealth
 }
 
 map MOVEMENT "The Need For Speed"
@@ -78,6 +78,7 @@ map BSP "Render Bender"
 {
 	LevelNum = 7
 	Cluster = 1
+	Sky1 = "REDSKY", 0
 	ResetHealth
 }
 
