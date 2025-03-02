@@ -1,8 +1,13 @@
 # sep-doom-presentation
 
-## Mikoportal compatibility
+## Credits
 
-Taken from Fishytza's `fcw_mikocompat-take2.pk3` found on the [ZDoom Forums](https://forum.zdoom.org/viewtopic.php?t=76809&).
+* Mikoportal compatibility - Taken from Fishytza's `fcw_mikocompat-take2.pk3` found on the [ZDoom Forums](https://forum.zdoom.org/viewtopic.php?t=76809&)
+* Skyboxes - `SB_DooM.zip` (did not include author information; don't remember where I downloaded it from)
+* AFADoomer's [Wolf3D TC](https://github.com/AFADoomer/Wolf3D/)
+* [Kick Attack!](https://www.doomworld.com/idgames/levels/doom2/j-l/kickdm2)
+* [Chex Quest 3](https://www.chexquest3.com/downloads/)
+* Hovertank 3D sprites - downloaded from somewhere online
 
 ## Aliases for Strafe Running
 
