@@ -19,6 +19,7 @@ map SEP "SEP Forever Home"
 {
 	LevelNum = 1
 	Cluster = 1
+	Sky1 = "OrangeSky", 0
 	ResetHealth
 }
 
@@ -26,7 +27,7 @@ map BASICS "Elemental Sciences"
 {
 	LevelNum = 2
 	Cluster = 1
-	Sky1 = "REDSKY", 0
+	Sky1 = "RedSky", 0
 	ResetHealth
 }
 
@@ -41,6 +42,7 @@ map SOUND "The Sound & The Fury"
 {
 	LevelNum = 4
 	Cluster = 1
+	Sky1 = "CloudySky", 0
 	ResetHealth
 }
 
@@ -55,6 +57,7 @@ map KICK "Kick Attack!"
 {
 	LevelNum = 8
 	Cluster = 1
+	Sky1 = "CloudySky", 0	
 	ResetHealth
 }
 
@@ -78,7 +81,8 @@ map BSP "Render Bender"
 {
 	LevelNum = 7
 	Cluster = 1
-	Sky1 = "REDSKY", 0
+	Sky1 = "OrangeSky", 0
+	Sky2 = "RedSky", 0
 	ResetHealth
 }
 

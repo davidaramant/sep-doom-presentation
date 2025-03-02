@@ -1,4 +1,4 @@
-skybox REDSKY
+skybox "RedSky"
 {
     03_FR
     03_LF
@@ -8,3 +8,22 @@ skybox REDSKY
     03_UP
 }
 
+skybox "OrangeSky"
+{
+    04_FR
+    04_LF
+    04_FR
+    04_LF
+    04_UP
+    04_UP
+}
+
+skybox "CloudySky" fliptop
+{
+    01_FR
+    01_FR
+    01_FR
+    01_FR
+    01_UP
+    01_UP
+}
