@@ -1,0 +1,4 @@
+WallTexture "CQ_SKY", 512, 240
+{
+	Patch "patches/chex/CQ_SKY.png", 0, 0
+}
