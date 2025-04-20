@@ -1,3 +1,9 @@
 // Kick Attack switches
 switch doom 3 KA_SW1TEK on pic KA_SW2TEK tics 0
 switch doom 3 KA_SW1MET2 on pic KA_SW2MET2 tics 0
+
+// Chex movie
+texture CQT46
+pic CQT46 tics 6
+pic CQT47 tics 6
+pic CQT48 tics 6

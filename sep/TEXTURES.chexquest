@@ -2,3 +2,274 @@ WallTexture "CQ_SKY", 512, 240
 {
 	Patch "patches/chex/CQ_SKY.png", 0, 0
 }
+
+WallTexture "CQT00", 64, 128
+{
+	Patch "patches/chex/CQP00.png", 0, 0
+}
+
+WallTexture "CQT01", 128, 40
+{
+	Patch "patches/chex/CQP01.png", 0, 0
+}
+
+WallTexture "CQT02", 128, 128
+{
+	Patch "patches/chex/CQP02.png", 0, 0
+}
+
+WallTexture "CQT03", 128, 103
+{
+	Patch "patches/chex/CQP03.png", 0, 0
+}
+
+WallTexture "CQT04", 64, 64
+{
+	Patch "patches/chex/CQP04.png", 0, 0
+}
+
+WallTexture "CQT05", 128, 128
+{
+	Patch "patches/chex/CQP05.png", 0, 0
+}
+
+WallTexture "CQT06", 64, 128
+{
+	Patch "patches/chex/CQP06.png", 0, 0
+	Patch "patches/chex/CQP06.png", 0, 64
+}
+
+WallTexture "CQT07", 128, 128
+{
+	Patch "patches/chex/CQP02.png", 0, 0
+	Patch "patches/chex/CQP07.png", 0, -1
+}
+
+WallTexture "CQT08", 128, 128
+{
+	Patch "patches/chex/CQP02.png", 0, 0
+	Patch "patches/chex/CQP08.png", 1, 7
+}
+
+WallTexture "CQT09", 128, 128
+{
+	Patch "patches/chex/CQP09.png", 0, 0
+	Patch "patches/chex/CQP09.png", 32, 0
+	Patch "patches/chex/CQP09.png", 64, 0
+	Patch "patches/chex/CQP10.png", 96, 0
+}
+
+WallTexture "CQT10", 128, 128
+{
+	Patch "patches/chex/CQP11.png", 0, 0
+}
+
+WallTexture "CQT11", 128, 128
+{
+	Patch "patches/chex/CQP12.png", 0, 0
+}
+
+WallTexture "CQT12", 64, 128
+{
+	Patch "patches/chex/CQP13.png", 0, 0
+	Patch "patches/chex/CQP14.lmp", 37, 52
+}
+
+WallTexture "CQT13", 128, 103
+{
+	Patch "patches/chex/CQP15.png", 0, 0
+}
+
+WallTexture "CQT14", 8, 128
+{
+	Patch "patches/chex/CQP16.lmp", 0, 0
+}
+
+WallTexture "CQT15", 64, 64
+{
+	Patch "patches/chex/CQP17.png", 0, 0
+}
+
+WallTexture "CQT16", 128, 256
+{
+	Patch "patches/chex/CQP18.png", 0, 0
+}
+
+WallTexture "CQT17", 64, 256
+{
+	Patch "patches/chex/CQP19.png", 0, 0
+}
+
+WallTexture "CQT18", 64, 64
+{
+	Patch "patches/chex/CQP20.png", 0, 0
+}
+
+WallTexture "CQT19", 64, 128
+{
+	Patch "patches/chex/CQP21.png", 0, 0
+}
+
+WallTexture "CQT20", 64, 128
+{
+	Patch "patches/chex/CQP22.png", 0, 70
+	Patch "patches/chex/CQP22.png", 0, 99
+	Patch "patches/chex/CQP00.png", 0, 0
+}
+
+WallTexture "CQT21", 128, 128
+{
+	Patch "patches/chex/CQP23.png", 0, 0
+	Patch "patches/chex/CQP24.lmp", 40, 10
+}
+
+WallTexture "CQT22", 64, 128
+{
+	Patch "patches/chex/CQP25.png", 0, 0
+}
+
+WallTexture "CQT23", 64, 128
+{
+	Patch "patches/chex/CQP09.png", 0, 0
+	Patch "patches/chex/CQP09.png", 32, 0
+}
+
+WallTexture "CQT24", 128, 128
+{
+	Patch "patches/chex/CQP02.png", 0, 0
+	Patch "patches/chex/CQP26.png", 32, 40
+}
+
+WallTexture "CQT25", 128, 128
+{
+	Patch "patches/chex/CQP02.png", 0, 0
+	Patch "patches/chex/CQP27.png", 32, 40
+}
+
+WallTexture "CQT26", 128, 64
+{
+	Patch "patches/chex/CQP28.png", 0, 0
+}
+
+WallTexture "CQT27", 64, 64
+{
+	Patch "patches/chex/CQP29.png", 0, 0
+}
+
+WallTexture "CQT28", 64, 128
+{
+	Patch "patches/chex/CQP30.png", 0, 0
+}
+
+WallTexture "CQT29", 128, 128
+{
+	Patch "patches/chex/CQP31.png", 0, 0
+}
+
+WallTexture "CQT30", 128, 128
+{
+	Patch "patches/chex/CQP02.png", 0, 0
+	Patch "patches/chex/CQP32.png", 0, 8
+}
+
+WallTexture "CQT31", 64, 64
+{
+	Patch "patches/chex/CQP33.png", 0, 0
+}
+
+WallTexture "CQT32", 64, 128
+{
+	Patch "patches/chex/CQP34.png", 0, 0
+	Patch "patches/chex/CQP35.lmp", 37, 53
+}
+
+WallTexture "CQT33", 128, 128
+{
+	Patch "patches/chex/CQP36.png", 0, 0
+}
+
+WallTexture "CQT34", 128, 128
+{
+	Patch "patches/chex/CQP37.png", 0, 0
+	Patch "patches/chex/CQP38.png", 26, 34
+	Patch "patches/chex/CQP14.lmp", 94, 75
+}
+
+WallTexture "CQT35", 128, 128
+{
+	Patch "patches/chex/CQP37.png", 0, 0
+	Patch "patches/chex/CQP39.png", 26, 34
+	Patch "patches/chex/CQP14.lmp", 94, 75
+}
+
+WallTexture "CQT36", 64, 16
+{
+	Patch "patches/chex/CQP40.lmp", 0, 0
+	Patch "patches/chex/CQP40.lmp", 16, 0
+	Patch "patches/chex/CQP40.lmp", 32, 0
+	Patch "patches/chex/CQP40.lmp", 48, 0
+}
+
+WallTexture "CQT37", 128, 128
+{
+	Patch "patches/chex/CQP02.png", 0, 0
+	Patch "patches/chex/CQP41.png", 32, 40
+}
+
+WallTexture "CQT38", 64, 64
+{
+	Patch "patches/chex/CQP42.png", 0, 0
+}
+
+WallTexture "CQT39", 256, 128
+{
+	Patch "patches/chex/CQP43.png", 0, 0
+}
+
+WallTexture "CQT40", 64, 256
+{
+	Patch "patches/chex/CQP44.png", 0, 0
+}
+
+WallTexture "CQT41", 256, 128
+{
+	Patch "patches/chex/CQP45.png", 0, 0
+}
+
+WallTexture "CQT42", 256, 128
+{
+	Patch "patches/chex/CQP46.png", 0, 0
+}
+
+WallTexture "CQT43", 256, 128
+{
+	Patch "patches/chex/CQP47.png", 0, 0
+}
+
+WallTexture "CQT44", 128, 128
+{
+	Patch "patches/chex/CQP02.png", 0, 0
+	Patch "patches/chex/CQP48.png", 0, 32
+}
+
+WallTexture "CQT45", 128, 128
+{
+	Patch "patches/chex/CQP37.png", 0, 0
+	Patch "patches/chex/CQP49.png", 26, 34
+	Patch "patches/chex/CQP14.lmp", 94, 75
+}
+
+WallTexture "CQT46", 384, 128
+{
+	Patch "patches/chex/CQP50.png", 0, 0
+}
+
+WallTexture "CQT47", 384, 128
+{
+	Patch "patches/chex/CQP51.png", 0, 0
+}
+
+WallTexture "CQT48", 384, 128
+{
+	Patch "patches/chex/CQP52.png", 0, 0
+}
