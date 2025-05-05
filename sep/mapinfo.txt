@@ -127,4 +127,8 @@ DoomEdNums
 	5025=KickLostSoul
 	5026=KickDemon
 	5027=KickSpiderMastermind
+
+	// Chex Quest
+	6000=MyFlemoidusBipedicus
+	6001=MyFlemoidusCommonus
 }
