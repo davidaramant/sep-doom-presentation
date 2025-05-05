@@ -14,7 +14,6 @@ class MyFlemoidusBipedicus : FlemoidusBipedicus
 		PainSound "kick_attack/shotguy/pain";
 		DeathSound "kick_attack/shotguy/death";
 		ActiveSound "kick_attack/shotguy/active";
-        DropItem "KickShotgun";
     }
 	States
 	{
@@ -72,7 +71,6 @@ class MyFlemoidusCommonus : FlemoidusCommonus
 		PainSound "kick_attack/shotguy/pain";
 		DeathSound "kick_attack/shotguy/death";
 		ActiveSound "kick_attack/shotguy/active";
-        DropItem "KickShotgun";
     }
 	States
 	{
