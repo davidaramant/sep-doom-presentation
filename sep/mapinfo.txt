@@ -131,4 +131,8 @@ DoomEdNums
 	// Chex Quest
 	6000=MyFlemoidusBipedicus
 	6001=MyFlemoidusCommonus
+	6002=MyChexGasTank
+	6003=MyChexFlagOnPole
+	6004=MyPropHangingPlant1
+	6005=MyPropHangingPlant2
 }

@@ -111,3 +111,52 @@ class MyFlemoidusCommonus : FlemoidusCommonus
 		Goto See;
     }
 }
+
+class MyChexGasTank : ChexGasTank
+{
+  States
+  {
+	Spawn:
+		CQ03 A -1 Bright;
+		Stop;
+  }
+}
+
+class MyChexFlagOnPole : ChexFlagOnPole
+{
+	States
+	{
+	Spawn:
+		CQ04 A -1;
+		Stop;
+	}
+}
+
+class MyPropHangingPlant1 : NonsolidMeat2
+{
+	Default
+	{
+		Height 64;
+	}
+	States
+	{
+	Spawn:
+		CQ05 A -1;
+		Stop;		
+	}
+}
+
+class MyPropHangingPlant2 : NonsolidMeat3
+{
+	Default
+	{
+		Height 64;
+	}
+	States
+	{
+	Spawn:
+		CQ06 A -1;
+		Stop;
+	}
+}
+
