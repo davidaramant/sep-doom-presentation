@@ -14,6 +14,7 @@ class MyFlemoidusBipedicus : FlemoidusBipedicus
 		PainSound "chex_quest/shotguy/pain";
 		DeathSound "chex_quest/shotguy/death";
 		ActiveSound "chex_quest/shotguy/active";
+		BloodType "ChexBlood";
     }
 	States
 	{
@@ -71,6 +72,7 @@ class MyFlemoidusCommonus : FlemoidusCommonus
 		PainSound "chex_quest/shotguy/pain";
 		DeathSound "chex_quest/shotguy/death";
 		ActiveSound "chex_quest/shotguy/active";
+		BloodType "ChexBlood";
     }
 	States
 	{
@@ -290,6 +292,20 @@ class ChexQuestBulletPuff : BulletPuff
 		CQ16 B 4;
 	Melee:
 		CQ16 CD 4;
+		Stop;
+	}
+}
+
+class ChexBlood : Actor
+{
+	States
+	{
+	Spawn:
+		CQ17 CBA 8;
+		Stop;
+	Spray:
+		SPRY ABCDEF 3;
+		SPRY G 2;
 		Stop;
 	}
 }
