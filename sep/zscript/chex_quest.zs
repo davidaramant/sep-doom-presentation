@@ -227,6 +227,10 @@ class MyLargeZorchPack : LargeZorchPack
 // SHTF=CQ15
 class MyLargeZorcher : LargeZorcher
 {
+	Default
+	{
+		Inventory.PickupSound "chex_quest/weapon_pickup";
+	}
 	States
 	{
 	Ready:
