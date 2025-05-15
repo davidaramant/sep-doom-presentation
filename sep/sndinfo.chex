@@ -1,1 +1,12 @@
-// TODO
+$random chex_quest/shotguy/sight		{ chex_quest/shotguy/sight1  chex_quest/shotguy/sight2  chex_quest/shotguy/sight3 }
+$random chex_quest/shotguy/death		{ chex_quest/shotguy/death1  chex_quest/shotguy/death2  chex_quest/shotguy/death3 }
+chex_quest/shotguy/sight1 = "sounds/chex_quest/cqposit1.wav"
+chex_quest/shotguy/sight2 = "sounds/chex_quest/cqposit2.wav"
+chex_quest/shotguy/sight3 = "sounds/chex_quest/cqposit3"
+chex_quest/shotguy/active = "sounds/chex_quest/cqposact.wav"
+chex_quest/shotguy/pain = "sounds/chex_quest/cqpopain.wav"
+chex_quest/shotguy/death1 = "sounds/chex_quest/cqpodth1"
+chex_quest/shotguy/death2 = "sounds/chex_quest/cqpodth2"
+chex_quest/shotguy/death3 = "sounds/chex_quest/cqpodth3"
+
+chex_quest/weapons/shotgf = "sounds/chex_quest/CQSHOTGN.wav"

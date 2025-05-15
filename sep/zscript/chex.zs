@@ -9,11 +9,11 @@ class MyFlemoidusBipedicus : FlemoidusBipedicus
     Default
     {
         // TODO
-        SeeSound "kick_attack/shotguy/sight";
-		AttackSound "kick_attack/shotguy/attack";
-		PainSound "kick_attack/shotguy/pain";
-		DeathSound "kick_attack/shotguy/death";
-		ActiveSound "kick_attack/shotguy/active";
+        SeeSound "chex_quest/shotguy/sight";
+		AttackSound "chex_quest/shotguy/attack";
+		PainSound "chex_quest/shotguy/pain";
+		DeathSound "chex_quest/shotguy/death";
+		ActiveSound "chex_quest/shotguy/active";
     }
 	States
 	{
@@ -66,11 +66,11 @@ class MyFlemoidusCommonus : FlemoidusCommonus
     Default
     {
         // TODO
-        SeeSound "kick_attack/shotguy/sight";
-		AttackSound "kick_attack/shotguy/attack";
-		PainSound "kick_attack/shotguy/pain";
-		DeathSound "kick_attack/shotguy/death";
-		ActiveSound "kick_attack/shotguy/active";
+        SeeSound "chex_quest/shotguy/sight";
+		AttackSound "chex_quest/shotguy/attack";
+		PainSound "chex_quest/shotguy/pain";
+		DeathSound "chex_quest/shotguy/death";
+		ActiveSound "chex_quest/shotguy/active";
     }
 	States
 	{
@@ -238,7 +238,7 @@ class MyLargeZorcher : LargeZorcher
 		Loop;
 	Fire:
 		CQ14 A 3;
-		CQ14 A 7 A_FireShotgun;
+		CQ14 A 7 A_FireLargeZorcher;
 		CQ14 BC 5;
 		CQ14 D 4;
 		CQ14 CB 5;
@@ -251,6 +251,45 @@ class MyLargeZorcher : LargeZorcher
 		Goto LightDone;
 	Spawn:
 		CQ13 A -1;
+		Stop;
+	}
+
+	action void A_FireLargeZorcher()
+	{
+		if (player == null)
+		{
+			return;
+		}
+
+		A_StartSound ("chex_quest/weapons/shotgf", CHAN_WEAPON);
+		Weapon weap = player.ReadyWeapon;
+		if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
+		{
+			if (!weap.DepleteAmmo (weap.bAltFire, true, 1))
+				return;
+			
+			player.SetPsprite(PSP_FLASH, weap.FindState('Flash'), true);
+		}
+		player.mo.PlayAttacking2 ();
+
+		double pitch = BulletSlope ();
+
+		for (int i = 0; i < 7; i++)
+		{
+			GunShot (false, "ChexQuestBulletPuff", pitch);
+		}
+	}
+}
+
+class ChexQuestBulletPuff : BulletPuff
+{
+	States
+	{
+	Spawn:
+		CQ16 A 4 Bright;
+		CQ16 B 4;
+	Melee:
+		CQ16 CD 4;
 		Stop;
 	}
 }
