@@ -160,3 +160,63 @@ class MyPropHangingPlant2 : NonsolidMeat3
 	}
 }
 
+class MyBowlOfFruit : BowlOfFruit
+{
+	States
+	{
+	Spawn:
+		CQ07 A -1;
+		Stop;
+	}
+}
+
+class MyBowlOfVegetables : BowlOfVegetables
+{
+	States
+	{
+	Spawn:
+		CQ08 A -1;
+		Stop;
+	}
+}
+
+class MySlimeRepellent : SlimeRepellent
+{
+	States
+	{
+	Spawn:
+		CQ09 ABCDCB 6;
+		Stop;
+	}
+}
+
+class MyChexArmor : ChexArmor
+{
+	States
+	{
+	Spawn:
+		CQ10 A 6;
+		CQ10 B 7 bright;
+		loop;
+	}
+}
+
+class MyMiniZorchPack : MiniZorchPack
+{
+	States
+	{
+	Spawn:
+		CQ11 A -1;
+		Stop;
+	}
+}
+
+class MyLargeZorchPack : LargeZorchPack
+{
+	States
+	{
+	Spawn:
+		CQ12 A -1;
+		Stop;
+	}
+}

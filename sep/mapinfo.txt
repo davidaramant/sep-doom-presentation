@@ -135,4 +135,10 @@ DoomEdNums
 	6003=MyChexFlagOnPole
 	6004=MyPropHangingPlant1
 	6005=MyPropHangingPlant2
+	6006=MyBowlOfFruit
+	6007=MyBowlOfVegetables
+	6008=MySlimeRepellent
+	6009=MyChexArmor
+	6010=MyMiniZorchPack
+	6011=MyLargeZorchPack
 }
