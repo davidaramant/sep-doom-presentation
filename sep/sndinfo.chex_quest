@@ -14,3 +14,10 @@ chex_quest/weapons/shotgf = "sounds/chex_quest/CQSHOTGN.wav"
 chex_quest/weapon_pickup = "sounds/chex_quest/CQWPNUP.wav"
 
 chex_quest/pistol = "sounds/chex_quest/CQPISTOL"
+
+$pitchshiftrange 3
+chex_quest/weapons/sawup = "sounds/chex_quest/cqsawup.wav"
+chex_quest/weapons/sawidle = "sounds/chex_quest/cqsawidl.wav"
+chex_quest/weapons/sawfull = "sounds/chex_quest/cqsawful"
+chex_quest/weapons/sawhit = "sounds/chex_quest/cqsawhit.wav"
+$pitchshiftrange 4

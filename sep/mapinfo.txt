@@ -142,4 +142,5 @@ DoomEdNums
 	6010=MyMiniZorchPack
 	6011=MyLargeZorchPack
 	6012=MyLargeZorcher
+	6013=MySuperBootspork
 }
