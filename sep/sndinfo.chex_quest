@@ -12,3 +12,5 @@ chex_quest/shotguy/death3 = "sounds/chex_quest/cqpodth3"
 chex_quest/weapons/shotgf = "sounds/chex_quest/CQSHOTGN.wav"
 
 chex_quest/weapon_pickup = "sounds/chex_quest/CQWPNUP.wav"
+
+chex_quest/pistol = "sounds/chex_quest/CQPISTOL"

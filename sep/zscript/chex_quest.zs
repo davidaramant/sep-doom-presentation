@@ -8,7 +8,6 @@ class MyFlemoidusBipedicus : FlemoidusBipedicus
 {
     Default
     {
-        // TODO
         SeeSound "chex_quest/shotguy/sight";
 		AttackSound "chex_quest/shotguy/attack";
 		PainSound "chex_quest/shotguy/pain";
@@ -28,7 +27,7 @@ class MyFlemoidusBipedicus : FlemoidusBipedicus
 		Stop;
 	Melee:
         CQ01 E 10 A_FaceTarget;
-		CQ01 F 10 BRIGHT A_SposAttackUseAtkSound; // TODO
+		CQ01 F 10 BRIGHT A_ChexSposAttackUseAtkSound;
 		CQ01 E 10;
 		Goto See;
 	Pain:
@@ -54,6 +53,24 @@ class MyFlemoidusBipedicus : FlemoidusBipedicus
 		CQ01 KJIH 5;
 		Goto See;
 	}
+
+	void A_ChexSPosAttackUseAtkSound()
+	{
+		if (target)
+		{
+			A_StartSound(AttackSound, CHAN_WEAPON);
+			A_FaceTarget();
+			double bangle = angle;
+			double slope = AimLineAttack(bangle, MISSILERANGE);
+		
+			for (int i=0 ; i<3 ; i++)
+			{
+				double ang = bangle + Random2[SPosAttack]() * (22.5/256);
+				int damage = Random[SPosAttack](1, 5) * 3;
+				LineAttack(ang, MISSILERANGE, slope, damage, "Hitscan", "ChexQuestBulletpuff");
+			}
+		}
+	}
 }
 
 //===========================================================================
@@ -66,7 +83,6 @@ class MyFlemoidusCommonus : FlemoidusCommonus
 {
     Default
     {
-        // TODO
         SeeSound "chex_quest/shotguy/sight";
 		AttackSound "chex_quest/shotguy/attack";
 		PainSound "chex_quest/shotguy/pain";
@@ -86,7 +102,7 @@ class MyFlemoidusCommonus : FlemoidusCommonus
 		Stop;
     Melee:
 		CQ02 E 10 A_FaceTarget;
-		CQ02 F 8 A_PosAttack; // TODO
+		CQ02 F 8 A_ChexPosAttack;
 		CQ02 E 8;
 		Goto See;
 	Pain:
@@ -112,6 +128,20 @@ class MyFlemoidusCommonus : FlemoidusCommonus
 		CQ02 JIH 5;
 		Goto See;
     }
+
+	void A_ChexPosAttack()
+	{
+		if (target)
+		{
+			A_FaceTarget();
+			double ang = angle;
+			double slope = AimLineAttack(ang, MISSILERANGE);
+			A_StartSound("chex_quest/pistol", CHAN_WEAPON);
+			ang  += Random2[PosAttack]() * (22.5/256);
+			int damage = Random[PosAttack](1, 5) * 3;
+			LineAttack(ang, MISSILERANGE, slope, damage, "Hitscan", "ChexQuestBulletpuff");
+		}
+	}
 }
 
 class MyChexGasTank : ChexGasTank
