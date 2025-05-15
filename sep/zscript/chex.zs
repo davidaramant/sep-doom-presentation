@@ -220,3 +220,37 @@ class MyLargeZorchPack : LargeZorchPack
 		Stop;
 	}
 }
+
+// SHTG=CQ14
+// SHTF=CQ15
+class MyLargeZorcher : LargeZorcher
+{
+	States
+	{
+	Ready:
+		CQ14 A 1 A_WeaponReady;
+		Loop;
+	Deselect:
+		CQ14 A 1 A_Lower;
+		Loop;
+	Select:
+		CQ14 A 1 A_Raise;
+		Loop;
+	Fire:
+		CQ14 A 3;
+		CQ14 A 7 A_FireShotgun;
+		CQ14 BC 5;
+		CQ14 D 4;
+		CQ14 CB 5;
+		CQ14 A 3;
+		CQ14 A 7 A_ReFire;
+		Goto Ready;
+	Flash:
+		CQ15 A 4 Bright A_Light1;
+		CQ15 B 3 Bright A_Light2;
+		Goto LightDone;
+	Spawn:
+		CQ13 A -1;
+		Stop;
+	}
+}
