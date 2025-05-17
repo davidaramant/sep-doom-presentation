@@ -14,6 +14,7 @@ class MyFlemoidusBipedicus : FlemoidusBipedicus
 		DeathSound "chex_quest/shotguy/death";
 		ActiveSound "chex_quest/shotguy/active";
 		BloodType "ChexBlood";
+		+NOBLOODDECALS
     }
 	States
 	{
@@ -89,6 +90,7 @@ class MyFlemoidusCommonus : FlemoidusCommonus
 		DeathSound "chex_quest/shotguy/death";
 		ActiveSound "chex_quest/shotguy/active";
 		BloodType "ChexBlood";
+		+NOBLOODDECALS
     }
 	States
 	{
@@ -260,6 +262,7 @@ class MyLargeZorcher : LargeZorcher
 	Default
 	{
 		Inventory.PickupSound "chex_quest/weapon_pickup";
+		Weapon.SlotNumber 3;
 	}
 	States
 	{
@@ -351,6 +354,7 @@ class MySuperBootspork : SuperBootspork
 		Weapon.UpSound "chex_quest/weapons/sawup";
 		Weapon.ReadySound "chex_quest/weapons/sawidle";
 		Inventory.PickupSound "chex_quest/weapon_pickup";
+		Weapon.SlotNumber 1;
 	}
 	States
 	{

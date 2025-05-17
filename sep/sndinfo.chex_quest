@@ -10,10 +10,9 @@ chex_quest/shotguy/death2 = "sounds/chex_quest/cqpodth2"
 chex_quest/shotguy/death3 = "sounds/chex_quest/cqpodth3"
 
 chex_quest/weapons/shotgf = "sounds/chex_quest/CQSHOTGN.wav"
-
 chex_quest/weapon_pickup = "sounds/chex_quest/CQWPNUP.wav"
-
 chex_quest/pistol = "sounds/chex_quest/CQPISTOL"
+chex_quest/dooropen = "sounds/chex_quest/CQDOROPN.wav"
 
 $pitchshiftrange 3
 chex_quest/weapons/sawup = "sounds/chex_quest/cqsawup.wav"
