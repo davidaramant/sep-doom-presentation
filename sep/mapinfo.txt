@@ -23,7 +23,7 @@ map SEP "SEP Forever Home"
 	ResetHealth
 }
 
-map BASICS "Elemental Sciences"
+map BASICS "Fractured Dimensions"
 {
 	LevelNum = 2
 	Cluster = 1
@@ -69,7 +69,7 @@ map CHEX "Chex Quest"
 	ResetHealth
 }
 
-map SCRIPTNG "Hocus Pocus"
+map SCRIPTNG "Kinematic Magick"
 {
 	LevelNum = 6
 	Cluster = 1
